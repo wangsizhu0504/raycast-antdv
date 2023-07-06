@@ -1,0 +1,44 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-antdv",
+  "title": "Ant Design Vue UI Documentation",
+  "version": "1.0.0",
+  "description": "Browse simplified documentation for Ant Design Vue or use quick links to particular pages directly through Raycast",
+  "author": "Kriszu",
+  "license": "MIT",
+  "categories": [
+    "Documentation",
+    "Productivity",
+    "Developer Tools"
+  ],
+  "icon": "logo.png",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Search Documentation",
+      "subtitle": "Ant Design Vue",
+      "description": "Search Ant Design Vue Documentation",
+      "mode": "view"
+    }
+  ],
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.54.1",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@kriszu/eslint-config": "1.0.14",
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "~20.4.0",
+    "@types/react": "^18.2.14",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8.44.0",
+    "typescript": "^5.1.6"
+  }
+}
