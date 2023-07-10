@@ -1,19 +1,14 @@
 import { Action, ActionPanel, Detail, Icon, List } from '@raycast/api'
-import { MANTINE_URL } from '../constants'
-import type { ComponentName } from '../types/ComponentName'
-import type { Markdown } from '../utils/parseMD'
-import { PropsDetail } from './details/PropsDetail'
+import { SITE_URL } from '../constants'
+
+import type { Component } from '../helpers/getDocumentation'
 
 interface Props {
-  document: Markdown
+  cmp: Component
 }
 
-export const DocumentActions = ({ document }: Props) => {
-  const { content, metadata } = document
-
-  const isCorePackage = metadata?.package === '@mantine/core'
-  const elementLink = `${MANTINE_URL}/${metadata.slug}`
-
+export const DocumentActions = ({ cmp }: Props) => {
+  const elementLink = `${SITE_URL}/${cmp.url}`
   return (
     <ActionPanel>
       <Action.Push
@@ -25,49 +20,42 @@ export const DocumentActions = ({ document }: Props) => {
           },
         }}
         target={
-          isCorePackage
-            ? (
-            <List
-              isShowingDetail
-              navigationTitle={metadata.title}
-              actions={
-                metadata.slug
-                  ? (
+          <List
+            isShowingDetail
+            navigationTitle={cmp.title}
+            actions={
+              cmp.url
+                ? (
                   <ActionPanel>
-                    <Action.OpenInBrowser icon={Icon.Globe} url={`${MANTINE_URL}/${metadata.slug}`} />
+                    <Action.OpenInBrowser icon={Icon.Globe} url={`${SITE_URL}/${cmp.url}`} />
                   </ActionPanel>
-                    )
-                  : null
-              }
-            >
-              <List.Item
+                  )
+                : null
+            }
+          >
+            {cmp.data.map((md) => {
+              return <List.Item
                 icon={Icon.Dot}
-                title="Docs"
-                detail={<List.Item.Detail markdown={content} />}
+                title={md.metadata?.title || 'Untitled'}
+                detail={<List.Item.Detail markdown={md.content} />}
                 actions={
                   <ActionPanel>
                     <Action.Push
                       title="Open"
                       icon={Icon.List}
-                      target={<Detail navigationTitle={metadata.title} markdown={content} />}
+                      target={<Detail navigationTitle={md.metadata.title} markdown={md.content} />}
                     />
-                    <Action.OpenInBrowser icon={Icon.Globe} url={elementLink} />
+                    <Action.OpenInBrowser icon={Icon.Globe} url={`${SITE_URL}/${md.metadata.url}`} />
                   </ActionPanel>
                 }
               />
-              <List.Item
-                icon={Icon.Dot}
-                title="Props"
-                detail={<PropsDetail component={metadata.title as ComponentName} />}
-              />
-            </List>
-              )
-            : (
-            <Detail markdown={content} />
-              )
+            })}
+
+          </List>
+          // <Detail markdown={content} />
         }
       />
-
+      <Action.OpenInBrowser icon={Icon.Globe} url={elementLink} />
     </ActionPanel>
   )
 }

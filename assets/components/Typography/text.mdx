@@ -1,0 +1,47 @@
+---
+title: Typography.Text
+order: 1
+url: components/typography-cn#Typography-Text
+---
+
+# Typography.Text
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| code | 添加代码样式 | boolean | false |
+| content(v-model) | 当使用 ellipsis 或 editable 时，使用 content 代替 children | string | - |
+| copyable | 是否可拷贝，为对象时可进行各种自定义 | boolean \| [copyable](#copyable) | false | [copyable](#copyable) |
+| delete | 添加删除线样式 | boolean | false |
+| disabled | 禁用文本 | boolean | false |
+| editable | 是否可编辑，为对象时可对编辑进行控制 | boolean \| [editable](#editable) | false | [editable](#editable) |
+| ellipsis | 自动溢出省略 | boolean | false |
+| keyboard | 添加键盘样式 | boolean | false |
+| mark | 添加标记样式 | boolean | false |
+| strong | 是否加粗 | boolean | false |
+| type | 文本类型 | `secondary` \| `success` \| `warning` \| `danger` | - |
+| underline | 添加下划线样式 | boolean | false |
+
+## Demo
+
+```html
+<template>
+  <a-space direction="vertical">
+    <a-typography-text>Ant Design Vue (default)</a-typography-text>
+    <a-typography-text type="secondary">Ant Design Vue (secondary)</a-typography-text>
+    <a-typography-text type="success">Ant Design Vue (success)</a-typography-text>
+    <a-typography-text type="warning">Ant Design Vue (warning)</a-typography-text>
+    <a-typography-text type="danger">Ant Design Vue (danger)</a-typography-text>
+    <a-typography-text disabled>Ant Design Vue (disabled)</a-typography-text>
+    <a-typography-text mark>Ant Design Vue (mark)</a-typography-text>
+    <a-typography-text code>Ant Design Vue (code)</a-typography-text>
+    <a-typography-text keyboard>Ant Design Vue (keyboard)</a-typography-text>
+    <a-typography-text underline>Ant Design Vue (underline)</a-typography-text>
+    <a-typography-text delete>Ant Design Vue (delete)</a-typography-text>
+    <a-typography-text strong>Ant Design Vue (strong)</a-typography-text>
+    <a-typography-link href="https://antdv.com" target="_blank">
+      Ant Design Vue (Link)
+    </a-typography-link>
+  </a-space>
+</template>
+
+```

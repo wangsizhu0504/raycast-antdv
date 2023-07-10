@@ -1,0 +1,20 @@
+[
+  {
+    "type": "type",
+    "title": "通用",
+    "children": [
+      {
+        "category": "Components",
+        "type": "通用",
+        "title": "Typography",
+        "subtitle": "排版",
+        "order": 0,
+        "cover": "Typography.svg",
+        "folder": "/assets/components/Typography",
+        "siteUrl": "components/typography"
+      }
+    ],
+    "order": 0
+  }
+
+]
