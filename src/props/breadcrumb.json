@@ -1,0 +1,52 @@
+{
+  "name": "ABreadcrumb",
+  "props": {
+    "itemRender": {
+      "value": "",
+      "description": "自定义链接函数，和 vue-router 配置使用， 也可使用 #itemRender=\"props\"",
+      "default": "",
+      "type": "({route, params, routes, paths}) => vNode"
+    },
+    "params": {
+      "value": "",
+      "description": "路由的参数",
+      "default": "",
+      "type": "object"
+    },
+    "routes": {
+      "value": "",
+      "description": "router 的路由栈信息",
+      "default": "",
+      "type": "[routes[]](#routes)"
+    },
+    "separator": {
+      "value": "",
+      "description": "分隔符自定义",
+      "default": "",
+      "type": "string|slot"
+    }
+  },
+  "item": {
+    "href": {
+      "value": "",
+      "description": "链接的目的地",
+      "default": "-",
+      "type": "string"
+    },
+    "overlay": {
+      "value": "",
+      "description": "下拉菜单的内容",
+      "default": "-",
+      "type": "[Menu]( | components | menu) | () => Menu"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "click",
+      "description": "单击事件",
+      "params": "(e:MouseEvent)=>void"
+    }
+  ],
+  "link": "https://antdv.com/components/breadcrumb-cn"
+}

@@ -20,6 +20,8 @@ const findMetaIndices: FindMetaIndices = (mem, item, i) => {
 interface ParseMeta {
   ({ lines, metaIndices }: { lines: Line[]; metaIndices: MetaIndex[] }): Record<string, unknown> & {
     title: string
+    component: string
+    attr: string
   }
 }
 
@@ -31,6 +33,8 @@ const parseMeta: ParseMeta = ({ lines, metaIndices }) => {
 
   return {
     title: 'untitled',
+    component: '',
+    attr: '',
     subtitle: '',
   }
 }

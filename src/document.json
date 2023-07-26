@@ -1,20 +1,565 @@
 [
   {
-    "type": "type",
     "title": "通用",
+    "order": 0,
     "children": [
       {
-        "category": "Components",
-        "type": "通用",
         "title": "Typography",
         "subtitle": "排版",
         "order": 0,
         "cover": "Typography.svg",
         "folder": "/assets/components/Typography",
-        "siteUrl": "components/typography"
+        "site": "components/typography-cn"
+      },
+      {
+        "title": "Button",
+        "subtitle": "按钮",
+        "order": 1,
+        "cover": "Button.svg",
+        "folder": "/assets/components/Button",
+        "site": "components/button-cn"
       }
-    ],
-    "order": 0
+    ]
+
+  },
+  {
+    "title": "布局",
+    "order": 1,
+    "children": [
+      {
+        "title": "Divider",
+        "subtitle": "分割线",
+        "order": 0,
+        "cover": "Divider.svg",
+        "folder": "/assets/components/Divider",
+        "site": "components/divider-cn"
+      },
+      {
+        "title": "Grid",
+        "subtitle": "栅格",
+        "order": 1,
+        "cover": "Grid.svg",
+        "folder": "/assets/components/Grid",
+        "site": "components/grid-cn"
+
+      }
+    ]
+
+  },
+  {
+    "title": "导航",
+    "order": 2,
+    "children": [
+      {
+        "title": "Anchor",
+        "subtitle": "锚点",
+        "order": 0,
+        "cover": "Anchor.svg",
+        "folder": "/assets/components/Anchor",
+        "site": "components/anchor-cn"
+      },
+      {
+        "title": "Breadcrumb",
+        "subtitle": "面包屑",
+        "order": 1,
+        "cover": "Breadcrumb.svg",
+        "folder": "/assets/components/Breadcrumb",
+        "site": "components/breadcrumb-cn"
+      },
+      {
+        "title": "Dropdown",
+        "subtitle": "下拉框",
+        "order": 2,
+        "cover": "Dropdown.svg",
+        "folder": "/assets/components/Dropdown",
+        "site": "components/dropdown-cn"
+      },
+      {
+        "title": "Menu",
+        "subtitle": "导航菜单",
+        "order": 3,
+        "cover": "Menu.svg",
+        "folder": "/assets/components/Menu",
+        "site": "components/menu-cn"
+      },
+      {
+        "title": "PageHeader",
+        "subtitle": "页头",
+        "order": 4,
+        "cover": "PageHeader.svg",
+        "folder": "/assets/components/PageHeader",
+        "site": "components/page-header-cn"
+      },
+      {
+        "title": "Pagination",
+        "subtitle": "分页",
+        "order": 5,
+        "cover": "Pagination.svg",
+        "folder": "/assets/components/Pagination",
+        "site": "components/pagination-cn"
+      },
+      {
+        "title": "Steps",
+        "subtitle": "步骤条",
+        "order": 6,
+        "cover": "Steps.svg",
+        "folder": "/assets/components/Steps",
+        "site": "components/steps-cn"
+      }
+    ]
+
+  },
+  {
+    "title": "数据录入",
+    "order": 3,
+    "children": [
+      {
+        "title": "AutoComplete",
+        "subtitle": "自动完成",
+        "order": 0,
+        "cover": "AutoComplete.svg",
+        "folder": "/assets/components/AutoComplete",
+        "site": "components/auto-complete-cn"
+      },
+      {
+        "title": "Cascader",
+        "subtitle": "级联选择",
+        "order": 1,
+        "cover": "Cascader.svg",
+        "folder": "/assets/components/Cascader",
+        "site": "components/cascader-cn"
+      },
+      {
+        "title": "Checkbox",
+        "subtitle": "多选框",
+        "order": 2,
+        "cover": "Checkbox.svg",
+        "folder": "/assets/components/Checkbox",
+        "site": "components/checkbox-cn"
+      },
+      {
+        "title": "DatePicker",
+        "subtitle": "日期选择框",
+        "order": 3,
+        "cover": "DatePicker.svg",
+        "folder": "/assets/components/DatePicker",
+        "site": "components/date-picker-cn"
+      },
+      {
+        "title": "Form",
+        "subtitle": "表单",
+        "order": 4,
+        "cover": "Form.svg",
+        "folder": "/assets/components/Form",
+        "site": "components/form-cn"
+      },
+      {
+        "title": "Input",
+        "subtitle": "输入框",
+        "order": 5,
+        "cover": "Input.svg",
+        "folder": "/assets/components/Input",
+        "site": "components/input-cn"
+      },
+      {
+        "title": "InputNumber",
+        "subtitle": "数字输入框",
+        "order": 6,
+        "cover": "InputNumber.svg",
+        "folder": "/assets/components/InputNumber",
+        "site": "components/input-number-cn"
+      },
+      {
+        "title": "Mentions",
+        "subtitle": "提及",
+        "order": 7,
+        "cover": "Mentions.svg",
+        "folder": "/assets/components/Mentions",
+        "site": "components/mentions-cn"
+      },
+      {
+        "title": "Radio",
+        "subtitle": "单选框",
+        "order": 8,
+        "cover": "Radio.svg",
+        "folder": "/assets/components/Radio",
+        "site": "components/radio-cn"
+      },
+      {
+        "title": "Rate",
+        "subtitle": "评分",
+        "order": 9,
+        "cover": "Rate.svg",
+        "folder": "/assets/components/Rate",
+        "site": "components/rate-cn"
+      },
+      {
+        "title": "Select",
+        "subtitle": "选择器",
+        "order": 10,
+        "cover": "Select.svg",
+        "folder": "/assets/components/Select",
+        "site": "components/select-cn"
+      },
+      {
+        "title": "Slider",
+        "subtitle": "滑动输入条",
+        "order": 11,
+        "cover": "Slider.svg",
+        "folder": "/assets/components/Slider",
+        "site": "components/slider-cn"
+      },
+      {
+        "title": "Switch",
+        "subtitle": "开关",
+        "order": 12,
+        "cover": "Switch.svg",
+        "folder": "/assets/components/Switch",
+        "site": "components/switch-cn"
+      },
+      {
+        "title": "TimePicker",
+        "subtitle": "时间选择框",
+        "order": 13,
+        "cover": "TimePicker.svg",
+        "folder": "/assets/components/TimePicker",
+        "site": "components/time-picker-cn"
+      },
+      {
+        "title": "Transfer",
+        "subtitle": "穿梭框",
+        "order": 14,
+        "cover": "Transfer.svg",
+        "folder": "/assets/components/Transfer",
+        "site": "components/transfer-cn"
+      },
+      {
+        "title": "TreeSelect",
+        "subtitle": "树选择",
+        "order": 15,
+        "cover": "TreeSelect.svg",
+        "folder": "/assets/components/TreeSelect",
+        "site": "components/tree-select-cn"
+      },
+      {
+        "title": "Upload",
+        "subtitle": "上传",
+        "order": 16,
+        "cover": "Upload.svg",
+        "folder": "/assets/components/Upload",
+        "site": "components/upload-cn"
+      }
+    ]
+
+  },
+  {
+    "title": "数据展示",
+    "order": 4,
+    "children": [
+      {
+        "title": "Avatar",
+        "subtitle": "头像",
+        "order": 0,
+        "cover": "Avatar.svg",
+        "folder": "/assets/components/Avatar",
+        "site": "components/avatar-cn"
+      },
+      {
+        "title": "Badge",
+        "subtitle": "徽标数",
+        "order": 1,
+        "cover": "Badge.svg",
+        "folder": "/assets/components/Badge",
+        "site": "components/badge-cn"
+      },
+      {
+        "title": "Calendar",
+        "subtitle": "日历",
+        "order": 2,
+        "cover": "Calendar.svg",
+        "folder": "/assets/components/Calendar",
+        "site": "components/calendar-cn"
+      },
+      {
+        "title": "Card",
+        "subtitle": "卡片",
+        "order": 3,
+        "cover": "Card.svg",
+        "folder": "/assets/components/Card",
+        "site": "components/card-cn"
+      },
+      {
+        "title": "Carousel",
+        "subtitle": "走马灯",
+        "order": 4,
+        "cover": "Carousel.svg",
+        "folder": "/assets/components/Carousel",
+        "site": "components/carousel-cn"
+      },
+      {
+        "title": "Collapse",
+        "subtitle": "折叠面板",
+        "order": 5,
+        "cover": "Collapse.svg",
+        "folder": "/assets/components/Collapse",
+        "site": "components/collapse-cn"
+      },
+      {
+        "title": "Comment",
+        "subtitle": "评论",
+        "order": 6,
+        "cover": "Comment.svg",
+        "folder": "/assets/components/Comment",
+        "site": "components/comment-cn"
+      },
+      {
+        "title": "Descriptions",
+        "subtitle": "描述列表",
+        "order": 7,
+        "cover": "Descriptions.svg",
+        "folder": "/assets/components/Descriptions",
+        "site": "components/descriptions-cn"
+      },
+      {
+        "title": "Empty",
+        "subtitle": "空状态",
+        "order": 8,
+        "cover": "Empty.svg",
+        "folder": "/assets/components/Empty",
+        "site": "components/empty-cn"
+      },
+      {
+        "title": "Image",
+        "subtitle": "图片",
+        "order": 9,
+        "cover": "Image.svg",
+        "folder": "/assets/components/Image",
+        "site": "components/image-cn"
+      },
+      {
+        "title": "List",
+        "subtitle": "列表",
+        "order": 10,
+        "cover": "List.svg",
+        "folder": "/assets/components/List",
+        "site": "components/list-cn"
+      },
+      {
+        "title": "Popover",
+        "subtitle": "气泡卡片",
+        "order": 11,
+        "cover": "Popover.svg",
+        "folder": "/assets/components/Popover",
+        "site": "components/popover-cn"
+      },
+      {
+        "title": "QRCode",
+        "subtitle": "二维码",
+        "order": 12,
+        "cover": "QRCode.svg",
+        "folder": "/assets/components/QRCode",
+        "site": "components/qr-code-cn"
+      },
+      {
+        "title": "Segmented",
+        "subtitle": "分段控制器",
+        "order": 13,
+        "cover": "Segmented.svg",
+        "folder": "/assets/components/Segmented",
+        "site": "components/segmented-cn"
+      },
+      {
+        "title": "Statistic",
+        "subtitle": "统计数值",
+        "order": 14,
+        "cover": "Statistic.svg",
+        "folder": "/assets/components/Statistic",
+        "site": "components/statistic-cn"
+      },
+      {
+        "title": "Table",
+        "subtitle": "表格",
+        "order": 15,
+        "cover": "Table.svg",
+        "folder": "/assets/components/Table",
+        "site": "components/table-cn"
+      },
+      {
+        "title": "Tabs",
+        "subtitle": "标签页",
+        "order": 16,
+        "cover": "Tabs.svg",
+        "folder": "/assets/components/Tabs",
+        "site": "components/tabs-cn"
+      },
+      {
+        "title": "Tag",
+        "subtitle": "标签",
+        "order": 17,
+        "cover": "Tag.svg",
+        "folder": "/assets/components/Tag",
+        "site": "components/tag-cn"
+      },
+      {
+        "title": "Timeline",
+        "subtitle": "时间轴",
+        "order": 18,
+        "cover": "Timeline.svg",
+        "folder": "/assets/components/Timeline",
+        "site": "components/timeline-cn"
+      },
+      {
+        "title": "Tooltip",
+        "subtitle": "文字提示",
+        "order": 19,
+        "cover": "Tooltip.svg",
+        "folder": "/assets/components/Tooltip",
+        "site": "components/tooltip-cn"
+      },
+      {
+        "title": "Tour",
+        "subtitle": "漫游式引导",
+        "order": 20,
+        "cover": "Tour.svg",
+        "folder": "/assets/components/Tour",
+        "site": "components/tour-cn"
+      },
+      {
+        "title": "Tree",
+        "subtitle": "树形控件",
+        "order": 21,
+        "cover": "Tree.svg",
+        "folder": "/assets/components/Tree",
+        "site": "components/tree-cn"
+      }
+    ]
+
+  },
+  {
+    "title": "反馈",
+    "order": 5,
+    "children": [
+      {
+        "title": "Alert",
+        "subtitle": "警告提示",
+        "order": 0,
+        "cover": "Alert.svg",
+        "folder": "/assets/components/Alert",
+        "site": "components/alert-cn"
+      },
+      {
+        "title": "Drawer",
+        "subtitle": "抽屉",
+        "order": 1,
+        "cover": "Drawer.svg",
+        "folder": "/assets/components/Drawer",
+        "site": "components/drawer-cn"
+      },
+      {
+        "title": "Message",
+        "subtitle": "全局提示",
+        "order": 2,
+        "cover": "Message.svg",
+        "folder": "/assets/components/Message",
+        "site": "components/message-cn"
+      },
+      {
+        "title": "Modal",
+        "subtitle": "对话框",
+        "order": 3,
+        "cover": "Modal.svg",
+        "folder": "/assets/components/Modal",
+        "site": "components/modal-cn"
+      },
+      {
+        "title": "Notification",
+        "subtitle": "通知提醒框",
+        "order": 4,
+        "cover": "Notification.svg",
+        "folder": "/assets/components/Notification",
+        "site": "components/notification-cn"
+      },
+      {
+        "title": "Popconfirm",
+        "subtitle": "气泡确认框",
+        "order": 5,
+        "cover": "Popconfirm.svg",
+        "folder": "/assets/components/Popconfirm",
+        "site": "components/popconfirm-cn"
+      },
+      {
+        "title": "Progress",
+        "subtitle": "进度条",
+        "order": 6,
+        "cover": "Progress.svg",
+        "folder": "/assets/components/Progress",
+        "site": "components/progress-cn"
+      },
+      {
+        "title": "Result",
+        "subtitle": "结果",
+        "order": 7,
+        "cover": "Result.svg",
+        "folder": "/assets/components/Result",
+        "site": "components/result-cn"
+      },
+      {
+        "title": "Skeleton",
+        "subtitle": "骨架屏",
+        "order": 8,
+        "cover": "Skeleton.svg",
+        "folder": "/assets/components/Skeleton",
+        "site": "components/skeleton-cn"
+      },
+      {
+        "title": "Spin",
+        "subtitle": "加载中",
+        "order": 9,
+        "cover": "Spin.svg",
+        "folder": "/assets/components/Spin",
+        "site": "components/spin-cn"
+      }
+    ]
+
+  },
+  {
+    "title": "其他",
+    "order": 6,
+    "children": [
+      {
+        "title": "Affix",
+        "subtitle": "固钉",
+        "order": 0,
+        "cover": "Affix.svg",
+        "folder": "/assets/components/Affix",
+        "site": "components/affix-cn"
+      },
+      {
+        "title": "ConfigProvider",
+        "subtitle": "全局化配置",
+        "order": 1,
+        "cover": "ConfigProvider.svg",
+        "folder": "/assets/components/ConfigProvider",
+        "site": "components/config-provider-cn"
+      },
+      {
+        "title": "FloatButton",
+        "subtitle": "悬浮按钮",
+        "order": 2,
+        "cover": "FloatButton.svg",
+        "folder": "/assets/components/FloatButton",
+        "site": "components/float-button-cn"
+      },
+      {
+        "title": "Watermark",
+        "subtitle": "水印",
+        "order": 3,
+        "cover": "Watermark.svg",
+        "folder": "/assets/components/Watermark",
+        "site": "components/watermark-cn"
+      }
+    ]
+
   }
 
 ]

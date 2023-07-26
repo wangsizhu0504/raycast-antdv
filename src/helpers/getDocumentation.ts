@@ -8,7 +8,7 @@ import { getDocCategoryFiles } from './getDocCategoryFiles'
 export interface Component {
   title: string
   icon: string
-  url: string
+  site: string
   data: Markdown[]
 }
 export interface DocumentationSection {
@@ -39,7 +39,7 @@ export const getDocumentation = async (): Promise<DocumentationSection[]> => {
             return {
               title: cmp.title,
               icon: cmp.cover,
-              url: cmp.siteUrl,
+              site: cmp.site,
               data: markdownData,
             }
           }))

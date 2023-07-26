@@ -1,0 +1,33 @@
+---
+title: API
+attr: props
+order: 0
+url: components/menu-cn#api
+---
+
+
+
+## 开发者注意事项
+
+- Menu 元素为 `ul`，因而仅支持 [`li` 以及 `script-supporting` 子元素](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)。因而你的子节点元素应该都在 `Menu.Item` 内使用。
+- Menu 需要计算节点结构，因而其子元素仅支持 `Menu.*` 以及对此进行封装的 HOC 组件。
+- 必须为 SubMenu 设置唯一 key
+
+## API
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| forceSubMenuRender | 在子菜单展示之前就渲染进 DOM | boolean | false |
+| inlineCollapsed | inline 时菜单是否收起状态 | boolean | - |
+| inlineIndent | inline 模式的菜单缩进宽度 | number | 24 |
+| items | 菜单内容 | ItemType | - |  |
+| mode | 菜单类型，现在支持垂直、水平、和内嵌模式三种 | `vertical` \| `horizontal` \| `inline` | `vertical` |
+| multiple | 是否允许多选 | boolean | false |
+| openKeys(v-model) | 当前展开的 SubMenu 菜单项 key 数组 | string\[] |  |
+| overflowedIndicator | 用于自定义 Menu 水平空间不足时的省略收缩的图标 | slot | `<EllipsisOutlined />` |
+| selectable | 是否允许选中 | boolean | true |
+| selectedKeys(v-model) | 当前选中的菜单项 key 数组 | string\[] |  |
+| subMenuCloseDelay | 用户鼠标离开子菜单后关闭延时，单位：秒 | number | 0.1 |
+| subMenuOpenDelay | 用户鼠标进入子菜单后开启延时，单位：秒 | number | 0 |
+| theme | 主题颜色 | `light` \| `dark` | `light` |
+| triggerSubMenuAction | 修改 Menu 子菜单的触发方式 | `click` \| `hover` | `hover` |

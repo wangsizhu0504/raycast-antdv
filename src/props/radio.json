@@ -1,0 +1,102 @@
+{
+  "name": "ARadio",
+  "props": {
+    "autofocus": {
+      "value": "",
+      "description": "自动获取焦点",
+      "default": "false",
+      "type": "boolean"
+    },
+    "checked(v-model)": {
+      "value": "",
+      "description": "指定当前是否选中",
+      "default": "false",
+      "type": "boolean"
+    },
+    "disabled": {
+      "value": "",
+      "description": "禁用 Radio",
+      "default": "false",
+      "type": "boolean"
+    },
+    "value": {
+      "value": "",
+      "description": "根据 value 进行比较，判断是否选中",
+      "default": "-",
+      "type": "any"
+    }
+  },
+  "button": {
+    "autofocus": {
+      "value": "",
+      "description": "自动获取焦点",
+      "default": "false",
+      "type": "boolean"
+    },
+    "checked(v-model)": {
+      "value": "",
+      "description": "指定当前是否选中",
+      "default": "false",
+      "type": "boolean"
+    },
+    "disabled": {
+      "value": "",
+      "description": "禁用 Radio",
+      "default": "false",
+      "type": "boolean"
+    },
+    "value": {
+      "value": "",
+      "description": "根据 value 进行比较，判断是否选中",
+      "default": "-",
+      "type": "any"
+    }
+  },
+  "group": {
+    "buttonStyle": {
+      "value": "",
+      "description": "RadioButton 的风格样式，目前有描边和填色两种风格",
+      "default": "`outline`",
+      "type": "`outline` | `solid`"
+    },
+    "disabled": {
+      "value": "",
+      "description": "禁选所有子单选器",
+      "default": "false",
+      "type": "boolean"
+    },
+    "name": {
+      "value": "",
+      "description": "RadioGroup 下所有 `input[type=\"radio\"]` 的 `name` 属性",
+      "default": "-",
+      "type": "string"
+    },
+    "options": {
+      "value": "",
+      "description": "以配置形式设置子元素",
+      "default": "-",
+      "type": "string\\[] | number[] | Array<{ label: string value: string disabled?: boolean }>"
+    },
+    "optionType": {
+      "value": "",
+      "description": "用于设置 Radio `options` 类型",
+      "default": "`default`",
+      "type": "`default` | `button`"
+    },
+    "size": {
+      "value": "",
+      "description": "大小，只对按钮样式生效",
+      "default": "`default`",
+      "type": "`large` | `default` | `small`"
+    },
+    "value(v-model)": {
+      "value": "",
+      "description": "用于设置当前选中的值",
+      "default": "-",
+      "type": "any"
+    }
+  },
+  "methods": [],
+  "events": [],
+  "link": "https://antdv.com/components/radio-cn"
+}

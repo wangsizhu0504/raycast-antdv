@@ -1,0 +1,122 @@
+{
+  "name": "AMentions",
+  "props": {
+    "autofocus": {
+      "value": "",
+      "description": "自动获得焦点",
+      "default": "false",
+      "type": "boolean"
+    },
+    "defaultValue": {
+      "value": "",
+      "description": "默认值",
+      "default": "-",
+      "type": "string"
+    },
+    "filterOption": {
+      "value": "",
+      "description": "自定义过滤逻辑",
+      "default": "-",
+      "type": "false | (input: string, option: OptionProps) => boolean"
+    },
+    "getPopupContainer": {
+      "value": "",
+      "description": "指定建议框挂载的 HTML 节点",
+      "default": "-",
+      "type": "() => HTMLElement"
+    },
+    "notFoundContent": {
+      "value": "",
+      "description": "当下拉列表为空时显示的内容",
+      "default": "Not Found",
+      "type": "string | slot"
+    },
+    "placement": {
+      "value": "",
+      "description": "弹出层展示位置",
+      "default": "bottom",
+      "type": "bottom | top"
+    },
+    "prefix": {
+      "value": "",
+      "description": "设置触发关键字",
+      "default": "@",
+      "type": "string | string[]"
+    },
+    "split": {
+      "value": "",
+      "description": "设置选中项前后分隔符",
+      "default": " ",
+      "type": "string"
+    },
+    "status": {
+      "value": "",
+      "description": "设置校验状态",
+      "default": "-",
+      "type": "error | warning"
+    },
+    "validateSearch": {
+      "value": "",
+      "description": "自定义触发验证逻辑",
+      "default": "-",
+      "type": "(text: string, props: MentionsProps) => void"
+    },
+    "value(v-model)": {
+      "value": "",
+      "description": "设置值",
+      "default": "-",
+      "type": "string"
+    },
+    "options": {
+      "value": "",
+      "description": "选项配置",
+      "default": "-",
+      "type": "Options"
+    },
+    "option": {
+      "value": "",
+      "description": "通过 option 插槽，自定义节点",
+      "default": "-",
+      "type": "v-slot:option=\"option\""
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "blur",
+      "description": "失去焦点的时回调",
+      "params": "function"
+    },
+    {
+      "name": "change",
+      "description": "值改变时触发",
+      "params": "function(value: string)"
+    },
+    {
+      "name": "focus",
+      "description": "获得焦点时回调",
+      "params": "function"
+    },
+    {
+      "name": "search",
+      "description": "文本框值变化时回调",
+      "params": "function(value: string, prefix: string)"
+    },
+    {
+      "name": "select",
+      "description": "选择选项时触发",
+      "params": "function(option: OptionProps, prefix: string)"
+    }
+  ],
+  "typeDetail": {
+    "Option": [
+      { "name": "value", "description": "选择时填充的值", "type": "string | number" },
+      { "name": "label", "description": "选项的标题", "type": "VueNode | (o: Option)=> VueNode" },
+      { "name": "disabled", "description": "是否可选", "type": "boolean" },
+      { "name": "class", "description": "css 类名", "type": "string" },
+      { "name": "style", "description": "选项样式", "type": "CSSProperties" },
+      { "name": "payload", "description": "其它数据", "type": "object" }
+    ]
+  },
+  "link": "https://antdv.com/components/mentions-cn"
+}

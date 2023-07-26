@@ -1,0 +1,100 @@
+{
+  "name": "ACollapse",
+  "props": {
+    "accordion": {
+      "value": "",
+      "description": "手风琴模式",
+      "default": "false",
+      "type": "boolean"
+    },
+    "activeKey(v-model)": {
+      "value": "",
+      "description": "当前激活 tab 面板的 key",
+      "default": "默认无，accordion 模式下默认第一个元素",
+      "type": "string[] | string <br> number[] | number"
+    },
+    "bordered": {
+      "value": "",
+      "description": "带边框风格的折叠面板",
+      "default": "`true`",
+      "type": "boolean"
+    },
+    "collapsible": {
+      "value": "",
+      "description": "所有子面板是否可折叠或指定可折叠触发区域",
+      "default": "-",
+      "type": "`header` | `icon` | `disabled`"
+    },
+    "destroyInactivePanel": {
+      "value": "",
+      "description": "销毁折叠隐藏的面板",
+      "default": "false",
+      "type": "boolean"
+    },
+    "expandIcon": {
+      "value": "",
+      "description": "自定义切换图标",
+      "default": "",
+      "type": "Function(props):VNode | slot=\"expandIcon\" slot-scope=\"props\"|#expandIcon=\"props\""
+    },
+    "expandIconPosition": {
+      "value": "",
+      "description": "设置图标位置",
+      "default": "-",
+      "type": "start | end"
+    },
+    "ghost": {
+      "value": "",
+      "description": "使折叠面板透明且无边框",
+      "default": "false",
+      "type": "boolean"
+    }
+  },
+  "panel": {
+    "collapsible": {
+      "value": "",
+      "description": "是否可折叠或指定可折叠触发区域",
+      "default": "-",
+      "type": "`header` | `disabled`"
+    },
+    "extra": {
+      "value": "",
+      "description": "自定义渲染每个面板右上角的内容",
+      "default": "-",
+      "type": "VNode | slot"
+    },
+    "forceRender": {
+      "value": "",
+      "description": "被隐藏时是否渲染 DOM 结构",
+      "default": "false",
+      "type": "boolean"
+    },
+    "header": {
+      "value": "",
+      "description": "面板头内容",
+      "default": "无",
+      "type": "string|slot"
+    },
+    "key": {
+      "value": "",
+      "description": "对应 activeKey",
+      "default": "无",
+      "type": "string | number"
+    },
+    "showArrow": {
+      "value": "",
+      "description": "是否展示当前面板上的箭头",
+      "default": "`true`",
+      "type": "boolean"
+    }
+  },
+  "methods": [],
+  "events": [
+    {
+      "name": "change",
+      "description": "切换面板的回调",
+      "params": "function(key)"
+    }
+  ],
+  "link": "https://antdv.com/components/collapse-cn"
+}
